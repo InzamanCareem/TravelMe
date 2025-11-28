@@ -157,3 +157,11 @@ This project is open-source and free to modify or improve.
 
 ### ✨ Created by: *Inzaman Careem*  
 *Version 1.0*  
+
+## 📚 References
+
+- **Kiwi.com** (no date) *Find Cheap Flights and Discover New Destinations*. Available at: [https://www.kiwi.com/en/](https://www.kiwi.com/en/) (Accessed: 29 July 2025)  
+- **Pexels** (2014) *The best free stock photos, royalty free images & videos shared by creators*. Available at: [https://www.pexels.com/](https://www.pexels.com/) (Accessed: 9 August 2025)  
+- **W3Schools** (1998) *Learn to code – CSS*. Available at: [https://www.w3schools.com/css/default.asp](https://www.w3schools.com/css/default.asp) (Accessed: 29 July 2025)  
+- **W3Schools** (1998) *Learn to code – HTML*. Available at: [https://www.w3schools.com/html/default.asp](https://www.w3schools.com/html/default.asp) (Accessed: 29 July 2025)  
+- **W3Schools** (1998) *Learn to code – JavaScript*. Available at: [https://www.w3schools.com/js/default.asp](https://www.w3schools.com/js/default.asp) (Accessed: 29 July 2025)
