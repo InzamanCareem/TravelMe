@@ -158,6 +158,8 @@ This project is open-source and free to modify or improve.
 ### ✨ Created by: *Inzaman Careem*  
 *Version 1.0*  
 
+---
+
 ## 📚 References
 
 - **Kiwi.com** (no date) *Find Cheap Flights and Discover New Destinations*. Available at: [https://www.kiwi.com/en/](https://www.kiwi.com/en/) (Accessed: 29 July 2025)  
