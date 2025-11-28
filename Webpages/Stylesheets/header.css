@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+    z-index: 100;
+    height: 80px;
+    align-items: center;
+}
+
+#toggleSidebar {
+  padding: 4px;         
+  border: none;         
+  background: transparent; 
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-section .sidebar-menu{
+    margin: 0 40px 0 20px;
+    width: 25px;
+    height: 25px;
+}
+
+.left-section .logo{
+    display: flex;
+    align-items: center;
+}
+
+.left-section .logo img{
+    margin: 0 10px 0 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.left-section .logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.left-section .logo .logo-name{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.right-section{
+    list-style-type: none;
+    margin-right: 80px;
+}
+
+.right-section li{
+    display: inline-block;
+}
+
+.right-section li a{
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    padding: 30px;
+}
+
+.right-section li:hover{
+    background-color: rgb(188, 188, 188);
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contact-section{
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contact-section h1 {
+    margin-top: 100px;
+    color: #0A74DA;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    margin-bottom: 30px;
+    max-width: 650px;
+    line-height: 1.5;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.field-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.field-group label {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #0A74DA;
+}
+
+.field-group input,
+.field-group textarea {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+}
+
+.field-group input:focus,
+.field-group textarea:focus {
+    outline: none;
+    border-color: #0A74DA;
+}
+
+.submit-btn {
+    background-color: #0A74DA;
+    color: white;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #065aab;
+}
+
+.contact-info {
+    flex: 1 1 300px;
+    color: #555;
+}
+
+.contact-info h2 {
+    color: #0A74DA;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-image {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.destination-section{
+    margin-bottom: 50px;
+}
+
+.destination-subtitle{
+    margin: 0 0 0 24px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.destination-heading{
+    margin: 0 0 30px 20px;
+    padding: 0;
+}
+
+.destination-description{
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    width: 540px;
+}
+
+.destination-grid-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin: 50px 20px 50px 20px;
+}
+
+.destination-grid-layout .destination-container{
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.destination-grid-layout .destination-container:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.destination-grid-layout .destination-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destination-grid-layout .destination-container h3{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.destination-grid-layout .destination-container p{
+    position: absolute;
+    bottom: 18px;
+    left: 40px;
+    font-size: 16px;
+    color: white;
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.testimonial-section{
+    margin-bottom: 50px;
+}
+
+.testimonial-section .testimonial-subtitle{
+    font-family: "Inter", sans-serif;
+    margin: 0 0 0 24px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.testimonial-section .testimonial-heading{
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0 0 30px 20px;
+    padding: 0;
+}
+
+.testimonial-section .testimonial-description{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    width: 540px;
+}
+
+.testimonial-grid-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    margin: 50px 20px 50px 20px;
+}
+
+.testimonial-grid-layout .review-container{
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: white;
+}
+
+.review-container .review-rating{
+    margin: 18px;
+}
+
+.review-container .review-rating img{
+    width: 20px;
+    margin: 1px;
+}
+
+.review-container p{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.review-container .reviewer-details{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 20px 0 20px 20px;
+}
+
+.review-container .reviewer-details img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.review-container .reviewer-details .reviewer-info{
+    margin-left: 20px;
+}
+
+.review-container .reviewer-details .reviewer-info .reviewer-name{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.review-container .reviewer-details .reviewer-info .reviewer-location{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}

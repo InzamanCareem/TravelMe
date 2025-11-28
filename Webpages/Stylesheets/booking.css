@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 120px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+}
+
+.step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background-color: #179c84;
+    z-index: 0;
+}
+
+.circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #179c84;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.step.hidden:not(:last-child)::after{
+    width: 50%;
+}
+
+.circle.hidden{
+    background-color: rgb(252, 252, 252);
+}
+
+.step.hidden .label{
+    color: rgb(252, 252, 252);
+}
+
+.label {
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    color: #333;
+}
+
+.circle.inactive {
+    background-color: #98a7a4;
+}
+
+.step.active:not(:last-child)::after {
+    background-color: #98a7a4;
+}
+
+.step.inactive:not(:last-child)::after {
+    background-color: #98a7a4;
+    width: 50%;
+    left: 50%;
+}
+
+.passenger-booking-overview-section{
+    margin: 0px 100px 0 100px;
+    display: flex;
+}
+
+.booking{
+    margin-right: 50px;
+}
+
+.flight-title{
+    padding-top: 20px;
+    margin-left: 100px;
+}
+
+.flight-summary{
+    border: 1px solid gray;
+    border-radius: 6px;
+    width: 800px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.flight-summary .flight-summary-title{
+    margin-left: 30px;
+}
+
+.flight-details{
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin: 0 20px 20px 20px;
+    display: flex;
+    justify-content: start;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.time-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px 10px 10px 10px;
+    row-gap: 6px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
+.time-details .time-date span{
+    display: block;
+    text-align: end;
+}
+
+.time-details span{
+    display: block;
+    text-align: end;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.location-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 10px;
+}
+
+.location-details .location-destination{
+    margin: 10px 0 10px 0;
+}
+
+.location-details .location-destination h5{
+    margin: 0 0 4px 0;
+}
+
+.location-details .location-destination span{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.passenger-details{
+    width: 800px;
+}
+
+.passenger-details form{
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.passenger-details .passenger-heading{
+    border-bottom: 1px solid rgb(109, 109, 109);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: span 2;
+}
+
+.passenger-details .passenger-heading .passenger-no{
+    margin: 20px 0 20px 0;
+}
+
+.passenger-details .passenger-details-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 50px;
+    border: 1px solid black;
+    padding: 0 20px 20px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.passenger-details .passenger-heading button{
+    background-color: rgb(255, 161, 161);
+    color: rgb(120, 0, 0);
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.passenger-details form .dropdown-field-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.passenger-details form label{
+    display: block;
+    margin-bottom: 6px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.passenger-details form select{
+    padding: 6px 60px 6px 0px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.passenger-details form input{
+    padding: 6px 10px 6px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.passenger-details form .bag-container{
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(35, 149, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.passenger-details form img{
+    width: 80px;
+    object-fit: cover;
+    margin: 0 10px 12px 60px;
+}
+
+.passenger-details form .bag-container .bag-info{
+    flex: 1;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.passenger-details form .bag-container .bag-status{
+    margin-right: 30px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 20px;
+    padding: 6px 8px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.passenger-details form .bag-container input[type="number"]{
+    width: 100px;
+    margin-right: 30px;
+}
+
+.passenger-details .book-more{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border: 1px solid gray;
+    padding: 10px;
+    align-items: center;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    background-color: rgb(252, 252, 252);
+}
+
+.passenger-details .book-more button{
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(162, 255, 162);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.change-page-buttons{
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgb(252, 252, 252);
+}
+
+.change-page-buttons button{
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.change-page-buttons button[type="submit"]{
+    background-color: rgb(31, 182, 31);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.passenger-overview{
+    width: 400px;
+    height: 170px;
+    background-color: #f5f5f5;
+    padding: 0 20px 0 20px;
+    border-radius: 10px;
+}
+
+.passenger-overview .passengers,
+.passenger-overview .cabin-baggage,
+.passenger-overview .checked-baggage,
+.passenger-overview .total-amount{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+}
+
+.passenger-overview .total-amount{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.select-readonly{
+  pointer-events: none;
+}

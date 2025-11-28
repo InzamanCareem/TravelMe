@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.flights-section{
+    padding: 30px;
+}
+
+.flight-header{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.flight-header h2{
+    margin: 20px;
+}
+
+.flight-header img{
+    width: 80px;
+    margin: 50px;
+}
+
+.flights-container {
+    flex: 1;
+}
+
+.flight-card {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 20px auto;
+  width: 800px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.flight-details {
+  flex: 3;
+}
+
+.flight-info {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.flight-info .time {
+  text-align: center;
+  width: 80px;
+}
+
+.flight-info .time strong {
+  font-size: 18px;
+  display: block;
+}
+
+.flight-info .duration{
+  flex: 1;
+  text-align: center;
+}
+
+.total-time {
+  background: #f0f2f5;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.flight-info {
+  text-align: center;
+}
+
+.flight-icons {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+.flight-icons span {
+  margin-right: 6px;
+}
+
+.flight-price {
+  flex: 1;
+  text-align: center;
+  border-left: 1px solid #eee;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.flight-price .guarantee {
+  font-size: 12px;
+  color: #007f5f;
+  margin-bottom: 10px;
+}
+
+.flight-price .price {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.flight-price button {
+  background-color: #008566;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+

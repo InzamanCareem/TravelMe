@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelMe</title>
+
+    <link rel="icon" href="/Icons/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/Webpages/Stylesheets/general.css">
+    <link rel="stylesheet" href="/Webpages/Stylesheets/header.css">
+    <link rel="stylesheet" href="/Webpages/Stylesheets/sidebar.css">
+    <link rel="stylesheet" href="/Webpages/Stylesheets/home.css"> 
+    <link rel="stylesheet" href="/Webpages/Stylesheets/destinations.css">
+    <link rel="stylesheet" href="/Webpages/Stylesheets/packages.css">
+    <link rel="stylesheet" href="/Webpages/Stylesheets/testimonials.css">
+    <link rel="stylesheet" href="/Webpages/Stylesheets/footer.css"> 
+
+    <script src="Scripts/home.js"></script>
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <button id="toggleSidebar"><img class="sidebar-menu" src="/Icons/sidebar-menu.svg" alt="sidebar-menu"></button>
+            <div class="logo">
+                <a href="home.html"><img src="/Icons/logo.svg" alt="logo-icon"></a>
+                <a href="home.html"><div class="logo-name">TravelMe</div></a>
+            </div>
+        </div>
+
+        <nav class="right-section">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
+    
+    <main>
+
+        <div id="sidebar" class="sidebar">
+            <button id="closeSidebar" class="close-btn">&times;</button>
+            <h3>Sidebar Menu</h3>
+            <a href="home.html">Home</a>
+            <a href="#destination-section">Destinations</a>
+            <a href="#package-section">Packages</a>
+            <a href="#testimonial-section">Testimonials</a>
+            <a href="#contact-section">Contact</a>
+        </div>
+
+
+
+        <section class="hero-section">
+            <h1 class="main-heading">Search Once. Fly Anywhere</h1>
+
+            <form id="search-flights-form" class="search-flights-form" method="get">
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" value="Sri Lanka" readonly>
+
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to">
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+
+                <input type="submit" value="Explore">
+            </form>        
+        </section>
+
+        <section id="destination-section" class="destination-section">
+            <h5 class="destination-subtitle">Featured Destinations</h5>
+            <h2 class="destination-heading">Explore Our Popular Destinations</h2>
+            <p class="destination-description">Experience the most iconic, breath taking and exciting locations. Choose your next adventure here and start making memories today.</p>
+            
+            <div class="destination-grid-layout">
+                <div class="destination-container" onclick="window.location.href=`/Webpages/flights.html?from=Sri%20Lanka&to=Italy&date=2025-08-04`">
+                    <img src="/Images/Destinations/Italy.jpg" alt="Italy">
+                    <h3>Italy</h3>
+                    <p>This is Italy.</p>
+                </div>
+                <div class="destination-container" onclick="window.location.href=`/Webpages/flights.html?from=Sri%20Lanka&to=Switzerland&date=2025-08-04`">
+                    <img src="/Images/Destinations/Switzerland.jpg" alt="Switzerland">
+                    <h3>Switzerland</h3>
+                    <p>This is Switzerland.</p>
+                </div>
+                <div class="destination-container" onclick="window.location.href=`/Webpages/flights.html?from=Sri%20Lanka&to=Thailand&date=2025-08-04`">
+                    <img src="/Images/Destinations/Thailand.jpg" alt="Thailand">
+                    <h3>Thailand</h3>
+                    <p>This is Thailand.</p>
+                </div>
+            </div>
+            <button class="destination-button" onclick="openDestinationsPage()">Explore more destinations<img class="arrow" src="/Icons/arrow.svg" alt="arrow"></button>
+        </section>
+
+        <section id="package-section" class="package-section">
+            <h5 class="package-subtitle">Featured Packages</h5>
+            <h2 class="package-heading">Find Your Perfect Trip</h2>
+            <p class="package-description">From city escapes to wild adventures, explore a wide range of travel packages tailored to your style.</p>
+            
+            <div class="package-grid-layout">
+                <div class="package-container" onclick="packageClick('/Images/Packages/Australia.jpg', 'Australia', 'Experience the charm of white washed.', '8:30', '21:50', '960000')">
+                    <img src="/Images/Packages/Australia.jpg" alt="Australia">
+                    <div class="location-card">
+                        <div class="location-card-name">
+                            <h3>Sydney, Australia</h3>
+                            <div class="rating">
+                                <img src="/Icons/star.png" alt="star">
+                                <img src="/Icons/star.png" alt="star">
+                                <img src="/Icons/star.png" alt="star">
+                                <img src="/Icons/star.png" alt="star">
+                                <img src="/Icons/star.png" alt="star">
+                            </div>
+                        </div>
+                        <p class="location-card-description">From the Great Barrier Reef to the rugged Outback, Australia is a land of diverse landscapes and unique wildlife.</p>
+                        <ul>
+                            <li>3 Days 2 Nights</li>
+                            <li>Includes 5-star Sydney Harbour hotel stay</li>
+                            <li>Daily breakfast and dinner</li>
+                            <li>Great Barrier Reef day cruise</li>
+                            <li>Depart at 8:30 - Arrive at 21:50</li>
+                        </ul>
+                        <div class="pricing">
+                            <span>Per Person:</span>
+                            <span>LKR 960,000</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="package-container" onclick="packageClick('/Images/Packages/France.jpg', 'France', 'Experience the charm of white washed.', '9:15', '22:05', '855000')">
+                    <img src="/Images/Packages/France.jpg" alt="France">
+                    <div class="location-card">
+                        <div class="location-card-name">
+                            <h3>Paris, France</h3>
+                            <div class="rating">
+                                <img src="/Icons/star.png" alt="star">
+                                <img src="/Icons/star.png" alt="star">
+                                <img src="/Icons/star.png" alt="star">
+                                <img src="/Icons/star.png" alt="star">
+                                <img src="/Icons/star.png" alt="star">
+                            </div>
+                        </div>
+                        <p class="location-card-description">A romantic blend of art, fashion, and gourmet cuisine, home to the Eiffel Tower, charming villages, and world-class vineyards.</p>
+                        <ul>
+                            <li>7 Days 6 Nights</li>
+                            <li>Includes Paris boutique hotel stay</li>
+                            <li>All breakfasts included</li>
+                            <li>Seine River dinner cruise</li>
+                            <li>Depart at 9:15 - Arrive at 22:05</li>
+                        </ul>
+                        <div class="pricing">
+                            <span>Per Person:</span>
+                            <span>LKR 855,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-container" onclick="packageClick('/Images/Packages/Japan.jpg', 'Japan', 'Experience the charm of white washed.', '7:45', '20:30', '930000')">
+                    <img src="/Images/Packages/Japan.jpg" alt="Japan">
+                    <div class="location-card">
+                        <div class="location-card-name">
+                            <h3>Tokyo, Japan</h3>
+                            <div>
+                                <img src="/Icons/star.png" alt="star">
+                                <img src="/Icons/star.png" alt="star">
+                                <img src="/Icons/star.png" alt="star">
+                                <img src="/Icons/star.png" alt="star">
+                                <img src="/Icons/star.png" alt="star">
+                            </div>
+                        </div>
+                        <p class="location-card-description">A harmonious mix of ancient traditions and futuristic innovation, with serene temples, cherry blossoms, and neon-lit cities.</p>
+                        <ul>
+                            <li>14 Days 13 Nights</li>
+                            <li>Includes Tokyo city hotel stay</li>
+                            <li>Daily breakfast and one traditional kaiseki dinner</li>
+                            <li>Bullet train pass between Tokyo and Kyoto</li>
+                            <li>Depart at 7:45 - Arrive at 20:30</li>
+                        </ul>
+                        <div class="pricing">
+                            <span>Per Person:</span>
+                            <span>LKR 930,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="packages-button" onclick="openPackagesPage()">Explore more packages<img class="arrow" src="/Icons/arrow.svg" alt="arrow"></button>
+        </section>
+
+        <section id="testimonial-section" class="testimonial-section">
+            <h5 class="testimonial-subtitle">Our Testimonial</h5>
+            <h2 class="testimonial-heading">What Our Travellers Say</h2>
+            <p class="testimonial-description">Hear what our happy travellers have to say about their unforgettable journeys.</p>
+            
+            <div class="testimonial-grid-layout">
+                <div class="review-container">
+                    <div class="review-rating">
+                        <img src="/Icons/star.png" alt="star">
+                        <img src="/Icons/star.png" alt="star">
+                        <img src="/Icons/star.png" alt="star">
+                        <img src="/Icons/star.png" alt="star">
+                        <img src="/Icons/star.png" alt="star">
+                    </div>
+                    <p>An unforgettable trip! The kids loved the camel rides, and everything was perfectly organized. Highly recommended for families.</p>
+                    <div class="reviewer-details">
+                        <img src="/Images/Testimonial/profilepic1.jpg" alt="profile-pic">
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">Jake T</span>
+                            <span class="reviewer-location">Family Traveler, Sydney</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-container">
+                    <div class="review-rating">
+                        <img src="/Icons/star.png" alt="star">
+                        <img src="/Icons/star.png" alt="star">
+                        <img src="/Icons/star.png" alt="star">
+                        <img src="/Icons/star.png" alt="star">
+                        <img src="/Icons/star.png" alt="star">
+                    </div>
+                    <p>The Maldives package was worth every penny. Peaceful beaches, friendly locals, and stunning sunsets. I just wish I had stayed longer.</p>
+                    <div class="reviewer-details">
+                        <img src="/Images/Testimonial/profilepic2.jpg" alt="profile-pic">
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">Tim W</span>
+                            <span class="reviewer-location">Solo Traveler, Sri Lanka</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-container">
+                    <div class="review-rating">
+                        <img src="/Icons/star.png" alt="star">
+                        <img src="/Icons/star.png" alt="star">
+                        <img src="/Icons/star.png" alt="star">
+                        <img src="/Icons/star.png" alt="star">
+                        <img src="/Icons/star.png" alt="star">
+                    </div>
+                    <p>Santorini is a dream! The sunsets in Oia were magical. Hotel was cozy, and the guide was knowledgeable. Will definitely return.</p>
+                    <div class="reviewer-details">
+                        <img src="/Images/Testimonial/profilepic3.jpg" alt="profile-pic">
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">Holt K</span>
+                            <span class="reviewer-location">Family Traveler, Thailand</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="testimonial-button" onclick="openTestimonialsPage()">View All Testimonials<img class="arrow" src="/Icons/arrow.svg" alt="arrow"></button>
+        </section>
+
+        <section id="cta-section" class="cta-section">
+            <h2>Subscribe To Our Newsletter</h2>
+            <span>Travel Tips Is All You Need to Stay Up To Date</span>
+            <form action="">
+                <div>
+                    <label for="subscribe-email">Email:</label>
+                    <input type="email" name="subscribe-email" id="subscribe-email">
+                </div>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section id="contact-section" class="contact-section">
+            <img src="/Images/contact.png" alt="contact">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="">
+                    <div class="field">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="field">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="field">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <a class="back-to-top" href="#">
+            <img src="/Icons/up.svg" alt="top">
+            <span>Back to top</a>
+        </a>
+    </main>
+
+    <hr>
+
+    <footer>
+        <div class="site-footer">
+            <div class="footer-branding">
+                <div class="logo-info">
+                    <img src="/Icons/logo.svg" alt="logo">
+                    <h4>TravelMe</h4>
+                </div>
+                <p>At TravelMe, we're passionate about crafting unforgettable journeys tailored just for you. From breathtaking destinations to seamless travel planning, our expert team is here to make your dream vacation a reality. Explore the world with confidence and personalized service every step of the way.</p>
+                <div class="footer-social">
+                    <img src="/Icons/google.png" alt="goggle">
+                    <img src="/Icons/facebook.png" alt="facebook">
+                    <img src="/Icons/instagram.png" alt="instagram">
+                    <img src="/Icons/twitter.png" alt="twitter">
+                </div>
+            </div>
+            <div class="footer-navigation">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <div class="number">
+                    <img src="/Icons/call-black.svg" alt="call">
+                    <span>+0123456789</span>
+                </div>
+                <div class="mail">
+                    <img src="/Icons/mail-black.svg" alt="mail">
+                    <span>company@gmail.com</span>
+                </div>
+                <div class="location">
+                    <img src="/Icons/location-black.svg" alt="location">
+                    <span>Colombo 10, Sri Lanka</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <span>Copyright &copy; 2025 MyCompany. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>

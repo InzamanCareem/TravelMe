@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<destinationlist>
+    
+    <destination>
+        <destinationImg>/Images/Destinations/Italy.jpg</destinationImg>
+        <destinationName>Italy</destinationName>
+        <destinationDescription>This is Italy</destinationDescription>
+    </destination>
+
+    <destination>
+        <destinationImg>/Images/Destinations/Greece.jpg</destinationImg>
+        <destinationName>Greece</destinationName>
+        <destinationDescription>This is Greece</destinationDescription>
+    </destination>
+
+    <destination>
+        <destinationImg>/Images/Destinations/New Zealand.jpg</destinationImg>
+        <destinationName>New Zealand</destinationName>
+        <destinationDescription>This is New Zealand</destinationDescription>
+    </destination>
+
+    <destination>
+        <destinationImg>/Images/Destinations/Switzerland.jpg</destinationImg>
+        <destinationName>Switzerland</destinationName>
+        <destinationDescription>This is Switzerland</destinationDescription>
+    </destination>
+
+    <destination>
+        <destinationImg>/Images/Destinations/Iceland.jpg</destinationImg>
+        <destinationName>Iceland</destinationName>
+        <destinationDescription>This is Iceland</destinationDescription>
+    </destination>
+    
+    <destination>
+        <destinationImg>/Images/Destinations/Thailand.jpg</destinationImg>
+        <destinationName>Thailand</destinationName>
+        <destinationDescription>This is Thailand</destinationDescription>
+    </destination>
+
+</destinationlist>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<packageslist>
+    
+    <package>
+        <packageImg>/Images/Packages/Australia.jpg</packageImg>
+        <packageName>Sydney, Australia</packageName>
+        <packageRating>
+            <packageRatingImg>/Icons/star.png</packageRatingImg>
+            <packageRatingCount>5</packageRatingCount>
+        </packageRating>
+        <packageDescription>From the Great Barrier Reef to the rugged Outback, Australia is a land of diverse landscapes and unique wildlife.</packageDescription>
+        <packageInclude>
+            <item>3 Days 2 Nights</item>
+            <item>Includes 5-star Sydney Harbour hotel stay</item>
+            <item>Daily breakfast and dinner</item>
+            <item>Great Barrier Reef day cruise</item>
+            <item>Depart at 8:30 - Arrive at 21:50</item>
+        </packageInclude>
+        <packageFor>Per Person:</packageFor>
+        <packagePrice>960,000</packagePrice>
+    </package>
+
+    <package>
+        <packageImg>/Images/Packages/France.jpg</packageImg>
+        <packageName>Paris, France</packageName>
+        <packageRating>
+            <packageRatingImg>/Icons/star.png</packageRatingImg>
+            <packageRatingCount>5</packageRatingCount>
+        </packageRating>
+        <packageDescription>A romantic blend of art, fashion, and gourmet cuisine, home to the Eiffel Tower, charming villages, and world-class vineyards.</packageDescription>
+        <packageInclude>
+            <item>7 Days 6 Nights</item>
+            <item>Includes Paris boutique hotel stay</item>
+            <item>All breakfasts included</item>
+            <item>Seine River dinner cruise</item>
+            <item>Depart at 9:15 - Arrive at 22:05</item>
+        </packageInclude>
+        <packageFor>Per Person:</packageFor>
+        <packagePrice>855,000</packagePrice>
+    </package>
+
+    <package>
+        <packageImg>/Images/Packages/Japan.jpg</packageImg>
+        <packageName>Tokyo, Japan</packageName>
+        <packageRating>
+            <packageRatingImg>/Icons/star.png</packageRatingImg>
+            <packageRatingCount>4</packageRatingCount>
+        </packageRating>
+        <packageDescription>A harmonious mix of ancient traditions and futuristic innovation, with serene temples, cherry blossoms, and neon-lit cities.</packageDescription>
+        <packageInclude>
+            <item>14 Days 13 Nights</item>
+            <item>Includes Tokyo city hotel stay</item>
+            <item>Daily breakfast and one traditional kaiseki dinner</item>
+            <item>Bullet train pass between Tokyo and Kyoto</item>
+            <item>Depart at 7:45 - Arrive at 20:30</item>
+        </packageInclude>
+        <packageFor>Per Person:</packageFor>
+        <packagePrice>930,000</packagePrice>
+    </package>
+
+    <package>
+        <packageImg>/Images/Packages/Norway.jpg</packageImg>
+        <packageName>Oslo, Norway</packageName>
+        <packageRating>
+            <packageRatingImg>/Icons/star.png</packageRatingImg>
+            <packageRatingCount>5</packageRatingCount>
+        </packageRating>
+        <packageDescription>A land of dramatic fjords, northern lights, offering some of the most breathtaking natural landscapes on Earth.</packageDescription>
+        <packageInclude>
+            <item>4 Days 3 Nights</item>
+            <item>Includes fjord-view lodge stay</item>
+            <item>Daily breakfast and lunch</item>
+            <item>Northern Lights guided tour</item>
+            <item>Depart at 6:55 - Arrive at 18:40</item>
+        </packageInclude>
+        <packageFor>Per Person:</packageFor>
+        <packagePrice>1,020,000</packagePrice>
+    </package>
+
+    <package>
+        <packageImg>/Images/Packages/Spain.jpg</packageImg>
+        <packageName>Madrid, Spain</packageName>
+        <packageRating>
+            <packageRatingImg>/Icons/star.png</packageRatingImg>
+            <packageRatingCount>4</packageRatingCount>
+        </packageRating>
+        <packageDescription>A vibrant country of flamenco, tapas, sunny beaches, and historic cities bursting with color and culture.</packageDescription>
+        <packageInclude>
+            <item>9 Days 8 Nights</item>
+            <item>Includes Barcelona seaside resort stay</item>
+            <item>All meals included</item>
+            <item>Flamenco night and tapas tasting</item>
+            <item>Depart at 10:25 - Arrive at 22:15</item>
+        </packageInclude>
+        <packageFor>Per Person:</packageFor>
+        <packagePrice>810,000</packagePrice>
+    </package>
+
+    <package>
+        <packageImg>/Images/Packages/Portugal.jpg</packageImg>
+        <packageName>Lisbon, Portugal</packageName>
+        <packageRating>
+            <packageRatingImg>/Icons/star.png</packageRatingImg>
+            <packageRatingCount>4</packageRatingCount>
+        </packageRating>
+        <packageDescription>Known for its charming cities, golden beaches, and delicious seafood, Portugal blends tradition with modernity.</packageDescription>
+        <packageInclude>
+            <item>2 Days 1 Nights</item>
+            <item>Includes Lisbon city center hotel stay</item>
+            <item>Daily breakfast buffet</item>
+            <item>Douro Valley wine tasting tour</item>
+            <item>Depart at 11:05 - Arrive at 23:00</item>
+        </packageInclude>
+        <packageFor>Per Person:</packageFor>
+        <packagePrice>765,000</packagePrice>
+    </package>
+
+</packageslist>

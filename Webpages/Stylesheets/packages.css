@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.package-section{
+    margin-bottom: 50px;
+}
+
+.package-section .package-subtitle{
+    margin: 0 0 0 24px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.package-section .package-heading{
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0 0 30px 20px;
+    padding: 0;
+}
+
+.package-section .package-description{
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    width: 540px;
+}
+
+.package-grid-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin: 50px 20px 50px 20px;
+}
+
+.package-grid-layout .package-container{
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    height: 500px;
+}
+
+.package-grid-layout .package-container:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.package-grid-layout .package-container img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.package-grid-layout .package-container .location-card-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px 0 10px;
+}
+
+.package-grid-layout .package-container .location-card-name h3{
+    font-size: 26px;
+    margin: 0;
+}
+
+.package-grid-layout .package-container .location-card-name img{
+    width: 20px;
+    margin: 1px;
+}
+
+.package-grid-layout .package-container .location-card .location-card-description{
+    font-size: 14px;
+    margin: 10px;
+}
+
+.package-grid-layout .package-container .location-card ul li{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.package-grid-layout .package-container .location-card .pricing{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px;
+}
+
+
+.package-filter{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+}
+
+.price-filter, .budget-filter, .duration-filter{
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+    margin: 0 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 350px;
+}
+
+.package-filter label{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 10px 0 10px;
+}
+
+.package-filter input{
+    width: 180px;
+}
+
+.price-filter span{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 120px;
+    text-align: end;
+    margin: 0;
+}
+
+.budget-filter select, .duration-filter select{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 220px;
+    text-align: start;
+    margin: 0 10px 0 0;
+    padding: 4px 2px 4px 2px;
+}

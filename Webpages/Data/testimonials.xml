@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testimoniallist>
+    <review>
+        <reviewRating>
+            <reviewImg>/Icons/star.png</reviewImg>
+            <reviewCount>5</reviewCount>
+        </reviewRating>
+        <reviewDescription>An unforgettable trip! The kids loved the camel rides, and everything was perfectly organized. Highly recommended for families.</reviewDescription>
+        <reviewerImg>/Images/Testimonial/profilepic1.jpg</reviewerImg>
+        <reviewerName>Jake T</reviewerName>
+        <reviewerLocation>Family Traveler, Sydney</reviewerLocation>
+    </review>
+
+    <review>
+        <reviewRating>
+            <reviewImg>/Icons/star.png</reviewImg>
+            <reviewCount>5</reviewCount>
+        </reviewRating>
+        <reviewDescription>The Maldives package was worth every penny. Peaceful beaches, friendly locals, and stunning sunsets. I just wish I had stayed longer.</reviewDescription>
+        <reviewerImg>/Images/Testimonial/profilepic2.jpg</reviewerImg>
+        <reviewerName>Tim W</reviewerName>
+        <reviewerLocation>Solo Traveler, Sri Lanka</reviewerLocation>
+    </review>
+
+    <review>
+        <reviewRating>
+            <reviewImg>/Icons/star.png</reviewImg>
+            <reviewCount>5</reviewCount>
+        </reviewRating>
+        <reviewDescription>Santorini is a dream! The sunsets in Oia were magical. Hotel was cozy, and the guide was knowledgeable. Will definitely return.</reviewDescription>
+        <reviewerImg>/Images/Testimonial/profilepic3.jpg</reviewerImg>
+        <reviewerName>Holt K</reviewerName>
+        <reviewerLocation>Family Traveler, Thailand</reviewerLocation>
+    </review>
+
+    
+</testimoniallist>

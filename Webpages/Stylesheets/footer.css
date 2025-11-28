@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.site-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-branding{
+    margin-left: 100px;
+    width: 400px;
+}
+
+.footer-branding .logo-info{
+    display: flex;
+    align-items: center;
+}
+
+.footer-branding .logo-info h4{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.footer-branding p{
+    margin: 0;
+    
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.footer-social{
+    margin: 14px 0 10px 0;
+}
+
+.footer-social img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.footer-navigation{
+    text-align: start;
+    margin-left: -300px;
+}
+
+.footer-navigation ul{
+    list-style: none;
+}
+
+.footer-navigation ul a{
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: black;
+    padding: 5px;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+}
+
+.footer-navigation ul a:hover{
+    text-decoration: none;
+}
+
+.footer-contact{
+    width: 400px;
+}
+
+.footer-contact .number,
+.footer-contact .mail,
+.footer-contact .location{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.footer-contact img{
+    margin-right: 20px;
+}
+
+.footer-contact span{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    display: block;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}

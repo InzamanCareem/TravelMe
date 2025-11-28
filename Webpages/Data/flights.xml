@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<flightdetails>
+    
+    <flight>
+        <flighttime>
+            <from>21:55</from>
+            <to>12:25</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Italy</to>
+        </flightlocation>
+        <flightprice>108600</flightprice>
+    </flight>
+
+    <flight>
+        <flighttime>
+            <from>21:30</from>
+            <to>13:50</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Italy</to>
+        </flightlocation>
+        <flightprice>94500</flightprice>
+    </flight>
+
+    <flight>
+        <flighttime>
+            <from>5:15</from>
+            <to>00:25</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Italy</to>
+        </flightlocation>
+        <flightprice>99600</flightprice>
+    </flight>
+
+    <flight>
+        <flighttime>
+            <from>3:25</from>
+            <to>15:55</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Italy</to>
+        </flightlocation>
+        <flightprice>108600</flightprice>
+    </flight>
+
+
+
+    <flight>
+        <flighttime>
+            <from>23:00</from>
+            <to>22:40</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Thailand</to>
+        </flightlocation>
+        <flightprice>54600</flightprice>
+    </flight>
+
+    <flight>
+        <flighttime>
+            <from>22:55</from>
+            <to>22:35</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Thailand</to>
+        </flightlocation>
+        <flightprice>54600</flightprice>
+    </flight>
+
+
+
+    <flight>
+        <flighttime>
+            <from>5:00</from>
+            <to>18:30</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Greece</to>
+        </flightlocation>
+        <flightprice>101700</flightprice>
+    </flight>
+
+    <flight>
+        <flighttime>
+            <from>4:35</from>
+            <to>21:10</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Greece</to>
+        </flightlocation>
+        <flightprice>112800</flightprice>
+    </flight>
+
+
+    
+    <flight>
+        <flighttime>
+            <from>22:55</from>
+            <to>5:30</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>New Zealand</to>
+        </flightlocation>
+        <flightprice>147900</flightprice>
+    </flight>
+
+    <flight>
+        <flighttime>
+            <from>10:40</from>
+            <to>14:10</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>New Zealand</to>
+        </flightlocation>
+        <flightprice>162000</flightprice>
+    </flight>
+
+    <flight>
+        <flighttime>
+            <from>22:55</from>
+            <to>5:30</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>New Zealand</to>
+        </flightlocation>
+        <flightprice>150900</flightprice>
+    </flight>
+
+
+    <flight>
+        <flighttime>
+            <from>21:55</from>
+            <to>13:10</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Switzerland</to>
+        </flightlocation>
+        <flightprice>83400</flightprice>
+    </flight>
+
+    <flight>
+        <flighttime>
+            <from>21:55</from>
+            <to>13:10</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Switzerland</to>
+        </flightlocation>
+        <flightprice>87900</flightprice>
+    </flight>
+
+    
+
+    <flight>
+        <flighttime>
+            <from>4:05</from>
+            <to>16:55</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Iceland</to>
+        </flightlocation>
+        <flightprice>130800</flightprice>
+    </flight>
+
+    <flight>
+        <flighttime>
+            <from>4:05</from>
+            <to>16:55</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Iceland</to>
+        </flightlocation>
+        <flightprice>135000</flightprice>
+    </flight>
+
+    <flight>
+        <flighttime>
+            <from>4:00</from>
+            <to>19:05</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Iceland</to>
+        </flightlocation>
+        <flightprice>134100</flightprice>
+    </flight>
+
+    <flight>
+        <flighttime>
+            <from>21:35</from>
+            <to>11:40</to>
+        </flighttime>
+        <flightlocation>
+            <from>Sri Lanka</from>
+            <to>Iceland</to>
+        </flightlocation>
+        <flightprice>139200</flightprice>
+    </flight>
+
+</flightdetails>

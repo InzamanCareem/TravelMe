@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 120px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+}
+
+.step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background-color: #179c84;
+    z-index: 0;
+}
+
+.circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #179c84;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.step.hidden:not(:last-child)::after{
+    width: 50%;
+}
+
+.circle.hidden{
+    background-color: rgb(252, 252, 252);
+}
+
+.step.hidden .label{
+    color: rgb(252, 252, 252);
+}
+
+.label {
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    color: #333;
+}
+
+.circle.inactive {
+    background-color: #98a7a4;
+}
+
+.step.active:not(:last-child)::after {
+    background-color: #179c84;
+}
+
+
+
+
+
+.payment-overview-section{
+    margin: 0px 100px 0 100px;
+    display: flex;
+}
+
+.payment{
+    margin-right: 50px;
+}
+
+.payment-title{
+    padding-top: 20px;
+    margin-left: 100px;
+}
+
+.passenger-information, .contact-details, .pay-option{
+    border: 1px solid gray;
+    border-radius: 6px;
+    width: 800px;
+    margin-bottom: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.passenger-information .passenger-information-title,
+.contact-details .contact-details-title, 
+.pay-option .pay-option-title{
+    padding: 20px 0 20px 30px;
+    margin: 0;
+    border-bottom: 1px solid gray;
+}
+
+#personal-details-container, .travelme-benifits-container, 
+#baggage-details-container, .seating-details-container{
+    border-bottom: 1px solid gray;
+    padding-bottom: 8px;
+    margin: 0 30px 0 30px;
+}
+
+.details-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-heading h4{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.details-heading #included{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.details-heading button{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: green;
+    text-decoration: underline;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.details-heading button:hover{
+    text-decoration: none;
+}
+
+
+.details-info{
+    display: flex;   
+}
+
+.details-info .name-date-info,
+.details-info .id-info{
+    flex: 1;
+}
+
+.details-info .name-date-info span,
+.details-info .id-info span,
+.travelme-benifits-container span,
+#baggage-details-container span,
+.seating-details-container span{
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.passenger-information .icon-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.passenger-information img{
+    margin-right: 10px;
+}
+
+
+#baggage-details-container .bag-details{
+    display: flex;
+
+}
+
+#baggage-details-container .bag-details .bag-what,
+#baggage-details-container .bag-details .bag-belong{
+    flex: 1;
+}
+
+#baggage-details-container .bag-details .bag-belong .icon-container{
+    height: 24px;
+}
+
+.flight-information{
+    border: 1px solid gray;
+    border-radius: 6px;
+    width: 800px;
+    margin-bottom: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.flight-information .flight{
+    padding: 20px 0 10px 30px;
+    margin: 0;
+}
+
+.flight-information .flight-time{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 0 0 30px;
+    margin: 0;
+    color: gray;
+}
+
+.contact-details .textfields{
+    display: flex;
+    align-items: center;
+}
+
+.contact-details .textfield{
+    flex: 1;
+    margin: 10px 30px 0 30px;
+}
+
+.contact-details .textfield label{
+    display: block;
+    margin-bottom: 6px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact-details .textfield input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.recieve-details{
+    display: flex;
+    align-items: center;
+    margin: 10px 30px 0 30px;
+}
+
+.contact-details .recieve-details input{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.contact-details .recieve-details label{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.pay-option .pay-container{
+    border: 1px solid gray;
+    margin: 20px 30px 0 30px;
+}
+
+.pay-container .pay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+    border-bottom: 1px solid gray;
+}
+
+.pay-container .pay label{
+    flex: 1;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0px 10px 0px;
+}
+
+.pay-container .pay input{
+    transform: scale(1.25);
+}
+
+.change-page-buttons{
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgb(252, 252, 252);
+}
+
+.change-page-buttons button{
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.change-page-buttons button[type="submit"]{
+    background-color: rgb(31, 182, 31);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+
+
+.passenger-details-overview{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.passenger-overview{
+    height: 205px;
+    background-color: #f5f5f5;
+    padding: 0 20px 0 20px;
+    border-radius: 10px;
+}
+
+.passenger-overview .passengers,
+.passenger-overview .cabin-baggage,
+.passenger-overview .checked-baggage,
+.passenger-overview .package-included,
+.passenger-overview .total-amount{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+}
+
+.passenger-overview .total-amount{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+.package-overview{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.package-overview .package{
+    height: 90px;
+    display: flex;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 0 10px 20px 0;
+}
+
+.package-overview .package img{
+    height: 110px;
+}
+
+.package-overview .package .package-info{
+    margin: 10px 0 0 10px;
+}
+
+.package-overview .package .package-info h4{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.package-overview .package .package-info p{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.package-overview button{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+}
+
+#popup{
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    background-color: #f3f3f3;
+    padding: 50px 100px; 
+    border: 1px solid #ccc; 
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    text-align: center;
+}
+
+#popup .popup-content{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#popup .popup-button{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+}
+
+main{
+    filter: none;
+}

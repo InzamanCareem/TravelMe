@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelMe</title>
+
+    <link rel="icon" href="/Icons/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/Webpages/Stylesheets/general.css">
+    <link rel="stylesheet" href="/Webpages/Stylesheets/header.css">
+    <link rel="stylesheet" href="/Webpages/Stylesheets/footer.css"> 
+    <link rel="stylesheet" href="/Webpages/Stylesheets/payment.css">
+
+    <script src="Scripts/payment.js"></script>
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <button id="toggleSidebar"><img class="sidebar-menu" src="/Icons/sidebar-menu.svg" alt="sidebar-menu"></button>
+            <div class="logo">
+                <a href="home.html"><img src="/Icons/logo.svg" alt="logo-icon"></a>
+                <a href="home.html"><div class="logo-name">TravelMe</div></a>
+            </div>
+        </div>
+
+        <nav class="right-section">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <div class="stepper">
+            <div class="step hidden">
+                <div class="circle hidden"></div>
+                <div class="label">.</div>
+            </div>
+
+            <div class="step completed">
+                <div class="circle completed">✓</div>
+                <div class="label">Search</div>
+            </div>
+
+            <div class="step completed">
+                <div class="circle completed">✓</div>
+                <div class="label">Passenger details</div>
+            </div>
+
+            <div class="step active">
+                <div class="circle active">3</div>
+                <div class="label">Overview & Payment</div>
+            </div>
+
+            <div class="step hidden">
+                <div class="circle hidden"></div>
+                <div class="label">.</div>
+            </div>
+            
+        </div>
+
+        <h2 class="payment-title">Overview & payment</h2>
+
+        <section class="payment-overview-section">
+
+            <div class="payment">
+                <div>
+                    <div class="passenger-information">
+                        <h3 class="passenger-information-title">Passenger information and extras</h3>
+                        <div id="personal-details-container">
+                            <div class="details-heading">
+                                <h4>Personal details</h4>
+                            </div>
+                        </div>
+
+                        <div class="travelme-benifits-container">
+                            <div class="details-heading">
+                                <h4>TravelMe benefits</h4>
+                                <span id="included">Included</span>
+                            </div>
+                            <div class="icon-container">
+                                <img src="/Icons/shield.svg" alt="shield">
+                                <span>Disruption Protection</span>
+                            </div>
+                            <div class="icon-container">
+                                <img src="/Icons/airplane_ticket.svg" alt="ticket">
+                                <span>Live Boarding Pass</span>
+                            </div>
+                            <div class="icon-container">
+                                <img src="/Icons/diamond.svg" alt="diamond">
+                                <span>Premium services</span>  
+                            </div>                  
+                        </div>
+
+                        <div id="baggage-details-container">
+                            <div class="details-heading">
+                                <h4>Baggage</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="payment-form">
+                    <div class="contact-details">
+                        <h3 class="contact-details-title">Contact details</h3>
+                        <div class="textfields">
+                            <div class="textfield">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email">
+                            </div>
+
+                            <div class="textfield">
+                                <label for="phone">Phone</label>
+                                <input type="text" name="phone" id="phone">
+                            </div>
+                        </div>
+                        <div class="recieve-details">
+                            <input type="checkbox" name="recieve" id="recieve">
+                            <label for="recieve">I want to receive SMS updates about my trip.</label>
+                        </div>
+                    </div>
+
+                    <div class="pay-option">
+                        <h3 class="pay-option-title">Pay with</h3>
+                        <div class="pay-container">
+                            <div class="pay">
+                                <label for="visa">Visa</label>
+                                <input type="radio" name="pay-option" id="visa">
+                            </div>
+                            
+                            <div class="pay">
+                                <label for="google">Google Pay</label>
+                                <input type="radio" name="pay-option" id="google">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="change-page-buttons">
+                    <button onclick="navigateToPreviousPage()">Back</button>
+                    <button type="submit" form="payment-form">Pay</button>
+                </div>
+
+            </div>
+
+            <div class="passenger-details-overview">
+                <div class="passenger-overview">
+                    <div class="passengers">
+                        <span id="overview-passenger-no-count"></span>
+                        <span id="overview-passenger-no-price"></span>
+                    </div>
+
+                    <div class="cabin-baggage">
+                        <span id="overview-cabin-bag-count"></span>
+                        <span id="overview-cabin-bag-price"></span>
+                    </div>
+                    
+                    <div class="checked-baggage">
+                        <span id="overview-checked-baggage-count"></span>
+                        <span id="overview-checked-baggage-price"></span>
+                    </div>
+
+                    <div class="package-included">
+                        <span id="overview-package-count"></span>
+                        <span id="overview-package-price"></span>
+                    </div>
+
+                    <div class="total-amount">
+                        <span>Total(LKR)</span>
+                        <span id="overview-total-cost"></span>
+                    </div>
+                </div>
+
+                <div id="package-overview" class="package-overview">
+                    <h3>My Itinerary</h3>
+
+                    <div id="packages">
+
+                    </div>
+
+                    <button onclick="addPackages()">Add Packages to cart</button>
+                </div>
+            </div>
+
+        </section>
+        
+        <a class="back-to-top" href="#">
+            <img src="/Icons/up.svg" alt="">
+            <span>Back to top</a>
+        </a>
+    </main>
+
+    <hr>
+
+    <footer>
+        <div class="site-footer">
+            <div class="footer-branding">
+                <div class="logo-info">
+                    <img src="/Icons/logo.svg" alt="logo">
+                    <h4>TravelMe</h4>
+                </div>
+                <p>At TravelMe, we're passionate about crafting unforgettable journeys tailored just for you. From breathtaking destinations to seamless travel planning, our expert team is here to make your dream vacation a reality. Explore the world with confidence and personalized service every step of the way.</p>
+                <div class="footer-social">
+                    <img src="/Icons/google.png" alt="goggle">
+                    <img src="/Icons/facebook.png" alt="facebook">
+                    <img src="/Icons/instagram.png" alt="instagram">
+                    <img src="/Icons/twitter.png" alt="twitter">
+                </div>
+            </div>
+            <div class="footer-navigation">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <div class="number">
+                    <img src="/Icons/call-black.svg" alt="call">
+                    <span>+0123456789</span>
+                </div>
+                <div class="mail">
+                    <img src="/Icons/mail-black.svg" alt="mail">
+                    <span>company@gmail.com</span>
+                </div>
+                <div class="location">
+                    <img src="/Icons/location-black.svg" alt="location">
+                    <span>Colombo 10, Sri Lanka</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <span>Copyright &copy; 2025 MyCompany. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>
